@@ -1,0 +1,176 @@
+/* Container holding the image and the text */
+
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+/* Top left text */
+.top-left {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+  color: #FFFFFF;
+  font-family: DM Sans;
+  letter-spacing: 1.25px;
+  font-size: 45px;
+  line-height: 1.25;
+}
+
+.top-left-2 {
+  position: absolute;
+  top: 45px;
+  left: 16px;
+  color: #FFFFFF;
+  font-family: worksansmedium,Helvetica,sans-serif;
+  font-size: 90px;
+  line-height: 1.25;
+}
+
+.top-left-3 {
+  position: absolute;
+  top: 140px;
+  left: 20px;
+  color: #FFFFFF;
+  font-family: worksansmedium,Helvetica,sans-serif;
+  font-size: 12px;
+  letter-spacing: 1.5px;
+  line-height: 1.25;
+}
+
+.info
+	{
+		position: absolute;
+		top: 35px;
+		left: 10px;
+	}
+
+/* Top right icon */
+.top-right {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.accordion {
+  background-color: #000000;
+  color: #FFFFFF;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-family: worksansmedium,Helvetica,sans-serif;
+  letter-spacing: 1.5px;
+  font-size: 12px;
+  font-weight: 400;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: #ccc;
+}
+
+.panel {
+  padding: 0 18px;
+  display: none;
+  background-color: white;
+  overflow: hidden;
+}
+
+/* Bar thumbnail */
+#rcorners3 {
+  border-radius: 25px;
+  padding: 20px;
+  width: 100px;
+  height: 100px;
+  float: left;
+}
+
+
+/* Star ratings*/
+.checked {
+  color: orange;
+}
+
+* {box-sizing: border-box}
+body {font-family: worksansmedium,Helvetica,sans-serif;
+; margin:0}
+
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+  background: #f1f1f1f1;
+}
+
+/* Slides */
+.mySlides {
+  display: none;
+  padding: 10px;
+  text-align: left;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -30px;
+  padding: 16px;
+  color: #888;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  position: absolute;
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+
+
+/* Bar thumbnail */
+#rcorners3 {
+  border-radius: 25px;
+  padding: 20px;
+  width: 100px;
+  height: 100px;
+  float: left;
+}
+
+/* Star ratings*/
+.checked {
+  color: orange;
+}
+
+/* Icon bar */
+.icon-bar {
+  width: 100%;
+  background-color: #555;
+  overflow: auto;
+}
+
+.icon-bar a {
+  float: left;
+  width: 25%;
+  text-align: center;
+  padding: 7.5px 0;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 36px;
+}
+
+.icon-bar a:hover {
+  background-color: #000;
+}
+
+.active {
+  background-color: #000;
+}
