@@ -5,12 +5,257 @@
 <head>
 	<title>Forecast - Alert!</title>
 	
-	<link rel="stylesheet" type="text/css" href="{% static 'weather/vendors/bootstrap/css/bootstrap.css' %}" />
 	<link rel="stylesheet" type="text/css" href="{% static 'weather/css/style.css' %}" />
 
 </head>
 <body>
-	<!-- your single-location forecast with alert interface here -->
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Forecast</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href='https://fonts.googleapis.com/css?family=DM Sans' rel='stylesheet'>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="{% static 'weather/vendors/bootstrap/css/bootstrap.css' %}" />
+	<link rel="stylesheet" type="text/css" href="{% static 'weather/css/forecast-style.css' %}" />
+
+</head>
+<body>
+  
+<div class="callout">
+  <div class="callout-header">Extreme Weather Alert!</div>
+  <span class="closebtn" onclick="this.parentElement.style.display='none';">×</span>
+  <div class="callout-container">
+    **Severe T-Storm Warning**<br><br>
+    Move indoors, away from windows and glass storm doors<br>
+    Treat similar to a tornado<br>
+    Stay off landline telephones<br>
+    Wait 30 min. after storm to assess damage.<br>
+  </div>
+</div>
+  
+	<div class="main-forecast">
+    <img src="https://media.cntraveler.com/photos/5a846a4db8ebbd42565cf854/master/w_820,c_limit/Alamo-Square_GettyImages-726798213.jpg" alt="" style="width:100%;">
+    <div class="top-left">San Francisco, CA</div>
+    <div class="top-left-2">63°</div>
+    <div class="top-left-3">SAT, 3 PM<br>
+      PARTLY CLOUDY<br>
+      <img src="https://www.iconsdb.com/icons/preview/white/info-xxl.png" alt="" height="35" width="35" class="info"/></div>
+    
+    <div class="top-right">
+      <img src="https://www.iconsdb.com/icons/preview/white/plus-5-xl.png" alt="" height="35" width="35"/>
+    </div>
+    </div>
+  
+<button class="accordion">HOUR</button>
+<div class="panel">
+    <div class="hourbody">
+<div class="timeline">
+  <div class="container left">
+    <div class="content">
+      <h2>4 PM</h2>
+      <p><strong>65°</strong><br>
+      Partly Cloudy
+      
+      </p>
+    </div>
+  </div>
+  <div class="container right">
+    <div class="content">
+       <h2>5 PM</h2>
+      <p><strong>64°</strong><br>
+      Partly Cloudy 
+      </p>
+    </div>
+  </div>
+  <div class="container left">
+    <div class="content">
+      <h2>6 PM</h2>
+      <p><strong>63°</strong><br>
+      Partly Cloudy</p>
+    </div>
+  </div>
+  <div class="container right">
+    <div class="content">
+      <h2>7 PM</h2>
+      <p><strong>62°</strong><br>Mostly Sunny</p>
+    </div>
+  </div>
+  <div class="container left">
+    <div class="content">
+      <h2>8 PM</h2>
+      <p><strong>60°</strong><br>Clear</p>
+    </div>
+  </div>
+  <div class="container right">
+    <div class="content">
+      <h2>9 PM</h2>
+      <p><strong>59°</strong><br>Clear</p>
+    </div>
+  </div>
+  <div class="container left">
+    <div class="content">
+      <h2>10 PM</h2>
+      <p><strong>59°</strong><br>Clear</p>
+    </div>
+  </div>
+  <div class="container right">
+    <div class="content">
+      <h2>11 PM</h2>
+      <p><strong>58°</strong><br>Clear</p>
+    </div>
+  </div>
+  <div class="container left">
+    <div class="content">
+      <h2>12 AM</h2>
+      <p><strong>57°</strong><br>Clear</p>
+    </div>
+  </div>
+</div>
+</div>
+    </div>
+  
+  <button class="accordion">WEEK</button>
+  <div class="panel">
+  </div>
+  
+  <button class="accordion">MONTH</button>
+  <div class="panel">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+  </div>
+  
+  <button class="accordion">STAY</button>
+  <div class="panel">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+  </div>
+  
+  <button class="accordion">EAT & DRINK</button>
+  <div class="panel">
+    
+    <div class="slideshow-container">
+      <div class="mySlides">
+        <img src="https://s3-media1.fl.yelpcdn.com/bphoto/7un5nY3kFmYUE7_YK1nnOQ/348s.jpg" id="rcorners3" align="middle"/> <p>Shizen Vegan Sushi Bar & Izakaya<br>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span><br>
+        370 14th St.<br>
+        101 users ate here this week</p>
+      </div>
+      
+      <div class="mySlides">
+        <img src="https://s3-media4.fl.yelpcdn.com/bphoto/YlbCJ4AoPahwKlJ9rNdAPA/348s.jpg" id="rcorners3" align="middle"/> <p>Gracias Madre<br>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span><br>
+        2211 Mission St.<br>
+        343 users ate here this week</p>
+      </div>
+      
+      <div class="mySlides">
+        <img src="https://s3-media3.fl.yelpcdn.com/bphoto/z6eRbNaYZz2-0LBY_g4HyQ/348s.jpg" id="rcorners3" align="middle"/><p>
+        Greens Restaurant<br>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span><br>
+        2 Marina Blvd., Bldg A
+        <br>
+        220 users ate here this week
+        </p>
+      </div>
+      
+      <div class="mySlides">
+        <img src="https://s3-media2.fl.yelpcdn.com/bphoto/TdXsjXERWb74PGlqmqdgpQ/348s.jpg" id="rcorners3" align="middle"/><p>
+        Chisme Cantina<br>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span><br>
+        882 Sutter St.<br>
+        190 users ate here this week
+        </p>
+      </div>
+      
+      <a class="prev" onclick="plusSlides(-1)">❮</a>
+      <a class="next" onclick="plusSlides(1)">❯</a>
+    </div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  slides[slideIndex-1].style.display = "block";
+}
+</script>
+</div>
+  
+  <button class="accordion">TO DO</button>
+  <div class="panel">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+  </div>
+  
+  <button class="accordion">NEARBY</button>
+  <div class="panel">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+  </div>
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+</script>
+
+<div class="icon-bar">
+  <a href="#"><i class="fas fa-search"></i></a>
+  <a href="#"><i class="fas fa-map-marked-alt"></i></a>
+  <a href="#"><i class="fas fa-bell"></i></a>
+  <a class="active" href="#"><i class="fas fa-user-circle"></i></a>
+</div>
+  
+  
+</body>
+</html>
+
+
+
+
+
 </body>
 </html>
 

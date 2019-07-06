@@ -3,13 +3,132 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Comparison - Alert!</title>
-	
-	<link rel="stylesheet" type="text/css" href="{% static 'weather/vendors/bootstrap/css/bootstrap.css' %}" />
-	<link rel="stylesheet" type="text/css" href="{% static 'weather/css/style.css' %}" />
+	<title>Comparison with alert</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+<!-- Add icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="{% static 'weather/css/comparison-style.css' %}" />
 
 </head>
 <body>
-	<!-- your comparison interface with alert here -->
+  <div class="callout">
+  <div class="callout-header">Extreme Weather Alert!</div>
+  <span class="closebtn" onclick="this.parentElement.style.display='none';">×</span>
+  <div class="callout-container">
+    **Severe T-Storm Warning**<br><br>
+    Move indoors, away from windows and glass storm doors<br>
+    Treat similar to a tornado<br>
+    Stay off landline telephones<br>
+    Wait 30 min. after storm to assess damage.<br>
+  </div>
+</div>
+  
+<div data-role="page">
+    <div data-role="header" data-position="fixed">
+<div class="navbar">
+
+<div class="dropdown">
+    <button class="dropbtn">JUN 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="#">JAN</a>
+      <a href="#">FEB</a>
+      <a href="#">MAR</a>
+      <a href="#">APR</a>
+      <a href="#">MAY</a>
+      <a href="#">JUL</a>
+      <a href="#">AUG</a>
+      <a href="#">SEP</a>
+      <a href="#">OCT</a>
+      <a href="#">NOV</a>
+      <a href="#">DEC</a>
+    </div>
+  </div> 
+  
+  <div class="dropdown">
+    <button class="dropbtn">30 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="#">1</a>
+      <a href="#">2</a>
+      <a href="#">3</a>
+      <a href="#">4</a>
+      <a href="#">5</a>
+      <a href="#">6</a>
+      <a href="#">7</a>
+      <a href="#">8</a>
+      <a href="#">9</a>
+      <a href="#">10</a>
+      <a href="#">11</a>
+      <a href="#">12</a>
+      <a href="#">13</a>
+      <a href="#">14</a>
+      <a href="#">15</a>
+      <a href="#">16</a>
+      <a href="#">17</a>
+      <a href="#">18</a>
+      <a href="#">19</a>
+      <a href="#">20</a>
+      <a href="#">21</a>
+      <a href="#">22</a>
+      <a href="#">23</a>
+      <a href="#">24</a>
+      <a href="#">25</a>
+      <a href="#">26</a>
+      <a href="#">27</a>
+      <a href="#">28</a>
+      <a href="#">29</a>
+      <a href="#">31</a>
+    </div>
+  </div> 
+  
+  <div class="dropdown">
+    <button class="dropbtn">7 PM 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="#">12 AM</a>
+      <a href="#">1 AM</a>
+      <a href="#">2 AM</a>
+      <a href="#">3 AM</a>
+      <a href="#">4 AM</a>
+      <a href="#">5 AM</a>
+      <a href="#">6 AM</a>
+      <a href="#">7 AM</a>
+      <a href="#">8 AM</a>
+      <a href="#">9 AM</a>
+      <a href="#">10 AM</a>
+      <a href="#">11 AM</a>
+      <a href="#">12 PM</a>
+      <a href="#">1 PM</a>
+      <a href="#">2 PM</a>
+      <a href="#">3 PM</a>
+      <a href="#">4 PM</a>
+      <a href="#">5 PM</a>
+      <a href="#">6 PM</a>
+      <a href="#">7 PM</a>
+      <a href="#">8 PM</a>
+      <a href="#">9 PM</a>
+      <a href="#">10 PM</a>
+      <a href="#">11 PM</a>
+    </div>
+  </div> 
+</div>
+
+<img src="https://i.imgur.com/xjRlFld.jpg" alt="" style="width:100%;">
+<img src="https://i.imgur.com/G8v1fRR.jpg" alt="" style="width:100%;">
+<img src="https://i.imgur.com/2lHwiAn.jpg" alt="" style="width:100%;">
+<img src="https://i.imgur.com/zteTzVk.jpg" alt="" style="width:100%;">
+
+
+<div class="icon-bar">
+  <a href="#"><i class="fas fa-search"></i></a>
+  <a class="active" href="#"><i class="fas fa-map-marked-alt"></i></a>
+  <a href="#"><i class="fas fa-bell"></i></a>
+  <a href="#"><i class="fas fa-user-circle"></i></a>
+</div>
 </body>
 </html>
